@@ -1,0 +1,42 @@
+see the folder in Pictures of observerdesign which has :
+
+1 -> idea to work on next to improve the code -> smart pointers , enum class , changin ds from forward_list to std::priority_queue or other , changing ds of map to unordered_map ..... much more
+    /home/rajat/Pictures/Screenshots/Observerdesign/neat_ideas.png
+
+
+2 -> what we have learned in this observer series
+    /home/rajat/Pictures/Screenshots/Observerdesign/What_we_learned.png
+
+
+3 -> idea of linking the subject and observer
+    /home/rajat/Pictures/Screenshots/Observerdesign/Subject_Observer_linking_idea.png
+
+
+4 -> Advance ideas -> event , std::Async many more thread safety ideas and event queue , resource manager idea
+    /home/rajat/Pictures/Screenshots/Observerdesign/advance_Solution.png
+
+
+
+// weak and shared ptr 
+// ISubject be shared
+// Iobejct be weak toward ISubject
+
+// like 
+/*
+
+class B ;
+
+class A{
+public :
+    std::weak_ptr<B> b;
+};
+
+class B{
+public :
+    std::shared_ptr<A> a;
+};
+
+*/
+
+// here see A like the Observer class And B like the ISubject class
+

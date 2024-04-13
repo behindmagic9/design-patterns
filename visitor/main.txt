@@ -1,0 +1,49 @@
+Representing an operation ot be performed on elelmnts of an object strcuture .
+
+Visitor lets you define a new operation without changing the base class of the elements on which it operates.
+
+nature of this make it an ideal pattern to plu in to the public api's.
+
+// union same the share memory address with all like :
+union geek { 
+    // Defining data members 
+    int age; 
+    float GPA; 
+    double marks; 
+}; 
+
+int main(){
+    cout << "Memory address of age: " << &student1.age ; // 0x7ffcfc68fc20
+    cout << "Memory address of age: " << &student1.GPA ; // 0x7ffcfc68fc20
+    cout << "Memory address of age: " << &student1.marks ; // 0x7ffcfc68fc20
+}
+
+// c++ multi paradigm language :
+Procedural style :
+- functions:
+- strcut
+- enum and enum class
+- union
+- arrays
+- if else conditional statements
+- switch statements
+
+Object Oriented Programing OOP:
+- Encapsulation - hiding information
+- Inheritance - ability to derive new types with a 'is-a' relationship
+- Polymorphism - Functional polyymorphism -- function overlaoding (not necesariy tied to inheritnace heirarchies)
+  -> Derive new types in a heirarchy i.e to select at run time i.e run time polymorphism ... polymorphism
+
+Functional Programing:
+Functions :
+- Lmabdas -- /home/rajat/Pictures/Screenshots/visitordesign/visitor lambdas.png  
+- Higher-Order functions
+- Inputs generate same outputs - potentital for caching - value semantics -- i.e data is copied
+
+Variables :
+- Avoiding mutation -- const and constexpr
+- Type safety - e.g. std::variant(union in c++17)
+
+Pattern Matching : 
+
+
